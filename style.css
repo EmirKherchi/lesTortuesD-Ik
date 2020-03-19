@@ -44,5 +44,7 @@ main{
     box-shadow: 6px -5px teal;
 }
 
-
+#toKnow{
+    display: none ;
+}
 
