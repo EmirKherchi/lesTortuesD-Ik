@@ -3,7 +3,7 @@
 
     document.getElementById("bro").onclick = function(){
         document.getElementById("info").classList.toggle("show");
-        style.cssText ="-webkit-transition: all 0.5s ease-in-out;";
+       
     };
 
     const hermann = document.getElementById("turtle_head");
