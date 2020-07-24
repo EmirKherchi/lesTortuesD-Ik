@@ -1,34 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Site internet de tortues d'Ismaël</title>
+    <title>Les Reptiles d'Ik</title>
 </head>
+
 <body>
 
-    <main class="container text-center">
-        <div id="presentation">
-            <h1>Le site Internet de tortues de Ismaël</h1>
-            <p>Je t'aime site internet de tortues.</p>
-            <p>Le site sert à savoir comment les tortues vivent, j'ai choisi un site internet de tortues parce que j'aime bien les tortues</p>
-        </div>
-        <div class="container-fluid text-center"id="TurtlesPics">
-            <img class="pics" id="turtle_head" src="images/tete-tortue-hermann.jpg" alt="tete de tortue hermann">
-            <p>J'aime cette image parce que cette tortue est mignonne. </p>
-        </div>
-        <div class="container-fluid text-center"id="TurtlesPics">
-            <img class="pics" id="turtle_galapagos" src="images/galapagos.jpg" alt="Tortue Galapagos">
-            <p>J'aime cette tortue parce que elle est grosse. </p>
-        </div>
-        <div class="container-fluid text-center"id="TurtlesPics">
-            <img class="pics" id="turtle_alligator" src="images/tortueAlligator.jpeg" alt="Tortue Alligator">
-            <p>J'aime bien cette tortue, mais je ne sais pas pourquoi. </p>
-        </div>
+    <main class="container-fluid">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Les Reptiles d'IK</h1>
+                <p class="lead text-muted">Découvrez mes reptiles préférés</p>
+                <p>
+                    <a id="display1" class="btn btn-info my-2">Tortues</a>
+                    <a id="display2" class="btn btn-info my-2">Lézards</a>
+                </p>
+            </div>
+        </section>
+
+
+        <section class="container off sections" id="section1">
+            <div class="row">
+                <div class="container-fluid text-center col-md 12 col-lg-4">
+                    <h3>Tortue Hermann</h3>
+                    <img id="turtle_head" src="images/tete-tortue-hermann.jpg" alt="tete de tortue hermann">
+                    <p>J'aime cette image parce que cette tortue est mignonne. </p>
+                    <button class="btn btn-secondary">Plus d'informations</button>
+                    <p class="hide-infos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                        consequatur a aperiam officiis aspernatur perferendis corporis, corrupti id adipisci fugiat
+                        iusto? Ipsa error quos minus eos cum? Quia, cum odio.</p>
+                </div>
+                <div class="container-fluid text-center col-md 12 col-lg-4">
+                    <h3>Tortue Galapagos</h3>
+                    <img id="turtle_galapagos" src="images/galapagos.jpg" alt="Tortue Galapagos">
+                    <p>J'aime cette tortue parce que elle est grosse. </p>
+                    <button class="btn btn-secondary">Plus d'informations</button>
+                    <p class="hide-infos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                        consequatur a aperiam officiis aspernatur perferendis corporis, corrupti id adipisci fugiat
+                        iusto? Ipsa error quos minus eos cum? Quia, cum odio.</p>
+                </div>
+                <div class="container-fluid text-center col-md 12 col-lg-4">
+                    <h3>Tortue Alligator</h3>
+                    <img id="turtle_alligator" src="images/tortueAlligator.jpeg" alt="Tortue Alligator">
+                    <p>J'aime bien cette tortue, mais je ne sais pas pourquoi. </p>
+                    <button class="btn btn-secondary">Plus d'informations</button>
+                    <p class="hide-infos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                        consequatur a aperiam officiis aspernatur perferendis corporis, corrupti id adipisci fugiat
+                        iusto? Ipsa error quos minus eos cum? Quia, cum odio.</p>
+                </div>
+                <div class="container-fluid text-center col-md 12 col-lg-4">
+                    <h3>Tortues Marines</h3>
+                    <img id="sea_turtles" src="images/tortuesMarines.jpg" alt="tortues de mer">
+                    <p>J'aime les tortues de mer parce que elles naissent dans le sable</p>
+                    <button class="btn btn-secondary">Plus d'informations</button>
+                    <p class="hide-infos">Les tortues marines sont les tortues de la super-famille des Chelonioidea1.
+                        Elles sont présentes dans tous les océans du monde à l'exception de l'océan Arctique.
+                        La tortue luth est la plus grande, mesurant 2 m de long, de 1 m à 1,5 m de large et pesant 600
+                        kg. La taille moyenne des autres espèces va de 50 cm à 1 m et est proportionnellement moins
+                        large.
+                        Ces espèces sont toutes vulnérables ou menacées. Elles font localement l'objet de protection ou
+                        de plan de restauration, mais la pollution, le braconnage et les prises accidentelles par engins
+                        de pêche restent des causes préoccupantes de recul de populations, déjà très relictuelles2.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container off sections" id="section2">
+            <div class="row">
+                <div class="container-fluid text-center col-md 12 col-lg-4">
+                    <h3>Gecko</h3>
+                    <img id="gecko_lizard" src="images/gecko.jpeg" alt="lezard gecko">
+                    <p>J'aime ce lézard parce que il a de belles couleurs</p>
+                    <button class="btn btn-secondary">Plus d'informations</button>
+                    <p class="hide-infos">Le Gecko, ou Gekkota, appartient à la classe des reptiles et fait partie de
+                        l’ordre des Squamates, qui englobe tous les lézards. Ce petit reptile, dont l’origine remonte à
+                        50 ou 60 millions d’années, compte plus de 800 espèces, que l’on peut rencontrer dans de
+                        nombreux pays différents. Son nom lui vient du bruit qu’il produit: ge-ko.</p>
+                </div>
+                <div class="container-fluid text-center col-md 12 col-lg-4">
+                    <h3>Lézards des murailles</h3>
+                    <img id="wall_lizard" src="images/lezard_murailles.jpg" alt="lezard des murailles">
+                    <p>J'aime ce lézard parce que je le trouve mignon</p>
+                    <button class="btn btn-secondary">Plus d'informations</button>
+                    <p class="hide-infos">C'est un lézard, de forme élancée, espèce extrêmement polymorphe, avec une
+                        variabilité extraordinaire de l'écaillure, une coloration très variable, brun, gris ou même
+                        verdâtre. La face ventrale est claire, jaune, bleu ou rougeâtre. La gorge est mouchetée de noir.
+                    </p>
+                </div>
+                <div class="container-fluid text-center col-md 12 col-lg-4">
+                    <h3>Caméléons</h3>
+                    <img id="cameleons" src="images/cameleon.jpg" alt="Caméléons">
+                    <p>J'aime le caméléons parce que il peut s'accorcher aux branches</p>
+                    <button class="btn btn-secondary">Plus d'informations</button>
+                    <p class="hide-infos">Ce sont des animaux qui se caractérisent par la mobilité indépendante de leurs
+                        yeux, leur langue protractile qui leur permet d'attraper leurs proies à distance, les doigts
+                        groupés en deux blocs opposables assurant une bonne prise sur les branches, leur capacité à
+                        changer de couleur, et enfin leur queue qui sert à se stabiliser.
+                    </p>
+                </div>
+                <div class="container-fluid text-center col-md 12 col-lg-4">
+                    <h3>Dragon de Komodo</h3>
+                    <img id="komodo" src="images/komodo.jpg" alt="Komodo dragon">
+                    <p>Celui-ci fait peur...</p>
+                    <button class="btn btn-secondary">Plus d'informations</button>
+                    <p class="hide-infos">Les dragons de Komodo ont été découverts par les scientifiques occidentaux en
+                        1910. Leur grande taille et leur réputation d'animaux redoutables les ont rendus populaires dans
+                        les zoos. Dans la nature, leur aire de distribution s'est vue réduite en raison des activités
+                        humaines et ils sont considérés par l'UICN comme menacés. Ils sont protégés par la loi
+                        indonésienne et un parc national, le parc national de Komodo, a été fondé pour favoriser leur
+                        protection.
+                    </p>
+                </div>
+                <div class="container-fluid text-center col-md 12 col-lg-4">
+                    <h3>Anolis vert</h3>
+                    <img id="green anolis" src="images/anolis_vert.jpg" alt="Anolis vert">
+                    <p>J'aime ce lézard parce il est rigolo</p>
+                    <button class="btn btn-secondary">Plus d'informations</button>
+                    <p class="hide-infos">Comme son nom l'indique, la couleur de l'anolis est d'un vert vif, mais
+                        celle-ci peut tourner au brun ou marron sous l'influence de plusieurs facteurs, tels que
+                        l'émotion et l'état d'esprit de l'individu, le camouflage dans l'environnement, ainsi que la
+                        température. Le ventre reste toujours de couleur blanche ; on peut remarquer un cercle brun ou
+                        vert autour de l'œil. L'anole vert passe du vert au brun pour différentes raisons. Le
+                        camouflage, la température et les émotions sont les principaux facteurs du changement de
+                        couleur.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
     </main>
-    
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

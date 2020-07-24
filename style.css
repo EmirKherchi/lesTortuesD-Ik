@@ -1,48 +1,58 @@
-/*#26b7b1*/
 
 
-body{
-    background-color: #DD5F2D;
-    color: #ffffff;
+
+*{
+    font-family: sans-serif;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: rgb(32, 32, 32);
+    
+}
+.off{
+    position: absolute;
+    left: -9999px;
+}
+section{
+    margin: 0px 150px;
 }
 
-main{
-    margin-top: 10%;
+img{
+    width: 250px;
+    height: 187px;
 }
 
-#presentation h1{
-    margin-bottom : 5%;
-    text-shadow: 1px 1px 1px black;
-    font-size: 54px;
-  
+.jumbotron{
+    background-color: #fff;
 }
-#presentation p{
-    margin-bottom: 2px;
+
+.jumbotron .btn{
+    color: #fff;
+    border: none;
+    padding: 5px 45px;
+    margin: 0 15px;
+
+}
+.jumbotron .btn:hover{
+    color: #fff;
+    background-color: #106674;
+}
+
+.sections p{
+    margin: 20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
     text-align: left;
+    height: 80px;
+}
+.sections div{
+    margin: 20px 0px;
+}
+.sections h3{
+    margin: 40px 0px;
 }
 
-#TurtlesPics{
-    margin-top: 15%;
-    margin-bottom: 15%;
-    background-color: #26b7b1;
-    padding: 5%;
-    font-size: 18px;
-    font-weight: 900;
-} 
-
-.pics{
-    width: 65%;
-    border-radius: 10%;
-    margin-bottom: 10px;
-   
+.hide-infos{
+    display:none;
 }
-
-.pics:hover{
-    transition: 500ms ease;
-    border-radius: 0%;
-    box-shadow: 6px -5px teal;
-}
-
-
-
