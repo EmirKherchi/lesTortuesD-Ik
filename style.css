@@ -1,58 +1,67 @@
-
-
-
-*{
-    font-family: sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    color: rgb(32, 32, 32);
-    
+* {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: rgb(32, 32, 32);
 }
-.off{
-    position: absolute;
-    left: -9999px;
+.off {
+  position: absolute;
+  left: -9999px;
 }
-section{
-    margin: 0px 150px;
+#pick{
+    margin-top: 150px;
 }
-
-img{
-    width: 250px;
-    height: 187px;
+section {
+  margin: 0px 150px;
 }
 
-.jumbotron{
-    background-color: #fff;
+img {
+  width: 250px;
+  height: 180px;
 }
 
-.jumbotron .btn{
-    color: #fff;
-    border: none;
-    padding: 5px 45px;
-    margin: 0 15px;
-
-}
-.jumbotron .btn:hover{
-    color: #fff;
-    background-color: #106674;
+.jumbotron {
+  background-color: #f2f2f2;
+  margin: 0;
 }
 
-.sections p{
-    margin: 20px;
-    font-size: 14px;
-    color: #333;
-    font-weight: 600;
-    text-align: left;
-    height: 80px;
+.jumbotron .btn {
+  color: #fff;
+  border: none;
+  padding: 5px 45px;
+  margin: 0 15px;
 }
-.sections div{
-    margin: 20px 0px;
-}
-.sections h3{
-    margin: 40px 0px;
+.jumbotron .btn:hover {
+  color: #fff;
+  background-color: #106674;
 }
 
-.hide-infos{
-    display:none;
+.sections p {
+  margin: 20px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+  height: 80px;
+  padding-left: 20px;
+}
+.sections .row > div {
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+.sections .row > div:hover {
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  transition: 300ms ease-out;
+  background-color: rgb(246, 245, 245);
+}
+.sections div {
+  margin: 20px 0px;
+}
+.sections h3 {
+  margin: 40px 0px;
+}
+
+.hide-infos {
+  display: none;
 }
