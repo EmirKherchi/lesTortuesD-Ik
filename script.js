@@ -11,6 +11,11 @@ const pick = document.getElementById("pick");
 const moreInfoBtn = document.getElementsByClassName("more");
 const infosHidden = document.getElementsByClassName("hide-infos");
 
+const modalDiv = document.getElementById("modal");
+const imgModal = document.getElementById("img_modal");
+const textModal = document.getElementById("text_modal");
+modalDiv.classList.add("displayNone");
+
 function show(display, section) {
   display.addEventListener("click", function () {
     for (let i = 0; i < sections.length; i++) {
@@ -22,17 +27,15 @@ function show(display, section) {
 }
 
 for (let i = 0; i < moreInfoBtn.length; i++) {
-  for (let j = 0; j < infosHidden.length; j++) {
-    moreInfoBtn[i].addEventListener("click", function () {
+  infosHidden[i].classList.add("displayNone");
 
-      if ((infosHidden[i].style.display = "none")) {
-        infosHidden[i].style.display = "block";
-      } else if ((infosHidden[i].style.display = "block")) {
-        infosHidden[i].style.display = "none";
-      }
-      
-    });
-  }
+  moreInfoBtn[i].addEventListener("click", function () {
+    modalDiv.classList.remove("displayNone");
+    modalDiv.classList.add('modalDisplay');
+    for (let j = 0; j < infosHidden.length; j++) {
+      textModal.innerHTML = infosHidden[i].textContent;
+    }
+  });
 }
 
 show(display1, section1);

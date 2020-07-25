@@ -9,8 +9,14 @@
   position: absolute;
   left: -9999px;
 }
-#pick{
-    margin-top: 150px;
+.displayNone {
+  display: none;
+}
+.displayBlock {
+  display: block;
+}
+#pick {
+  margin-top: 150px;
 }
 section {
   margin: 0px 150px;
@@ -49,6 +55,7 @@ img {
 .sections .row > div {
   border-radius: 5px;
   padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 .sections .row > div:hover {
   box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
@@ -62,6 +69,15 @@ img {
   margin: 40px 0px;
 }
 
-.hide-infos {
-  display: none;
+.modalDisplay {
+    z-index: 10000000000;
+  position: fixed;
+  top: 45%;
+  left: 25%;
+  background-color: #fff;
+  box-shadow: 15px 15px 27px #959595;
+  width: 50%;
+  height: 200px;
+  
+  
 }
