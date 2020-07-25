@@ -70,14 +70,20 @@ img {
 }
 
 .modalDisplay {
-    z-index: 10000000000;
+  z-index: 10000000000;
   position: fixed;
   top: 45%;
   left: 25%;
   background-color: #fff;
   box-shadow: 15px 15px 27px #959595;
   width: 50%;
-  height: 200px;
-  
-  
+  height: 50%;
+}
+
+#close {
+  cursor: pointer;
+}
+
+.filterMain{
+    filter: opacity(0.3) grayscale(80%);
 }
