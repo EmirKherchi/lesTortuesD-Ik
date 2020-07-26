@@ -83,16 +83,32 @@ img {
   margin: 40px 0px;
 }
 
+@keyframes modalAnimOn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .modalDisplay {
+  border-radius: 5px;
   z-index: 100;
-  background-color: #fff;
+  background-color: #fcfcfc;
   box-shadow: 15px 15px 27px #959595;
   width: 50%;
   position: fixed;
   top: 20%;
   left: 22%;
-  animation-duration: 5s;
-  animation-name: slidein;
+  animation-name: modalAnimOn;
+  -webkit-animation-name: modalAnimOn;
+  animation-duration: 500ms;
+  -webkit-animation-duration: 500ms;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
 }
 .modalDisplay img {
   width: 50%;
