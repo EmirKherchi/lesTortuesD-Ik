@@ -70,18 +70,34 @@ img {
 }
 
 .modalDisplay {
-  z-index: 10000000000;
-  position: fixed;
-  top: 45%;
-  left: 25%;
+  z-index: 1000;
   background-color: #fff;
   box-shadow: 15px 15px 27px #959595;
+ 
   width: 50%;
-  height: 50%;
+  position: fixed;
+  top : 20%; 
+  left:22%;
+}
+.modalDisplay img {
+  width: 50%;
+  height: 70%;
+  display: block;
+  margin: 20px auto;
+}
+
+.modalDisplay #text_modal {
+  text-align: center;
+  height: 70%;
+  margin: 20px 10px;
+
 }
 
 #close {
   cursor: pointer;
+  position: relative; 
+  left: 95%;
+  top : 5%
 }
 
 .filterMain{
