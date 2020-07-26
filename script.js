@@ -6,8 +6,6 @@ const section2 = document.getElementById("section2");
 
 const sections = document.getElementsByClassName("sections");
 
-const pick = document.getElementById("pick");
-
 const moreInfoBtn = document.getElementsByClassName("more");
 const infosHidden = document.getElementsByClassName("hide-infos");
 
@@ -29,15 +27,15 @@ for (let k = 0; k < allImg.length; k++) {
 }
 allsrcImages.shift(); // supprime la src de la liste des images car pas une src utilisable reste uniquement les bonnes images
 
-console.log(allsrcImages);
 
 function show(display, section) {
   display.addEventListener("click", function () {
     for (let i = 0; i < sections.length; i++) {
       sections[i].classList.add("off");
+      sections[i].classList.add('on');
     }
     section.classList.remove("off");
-    pick.style.display = "none";
+    
   });
 }
 

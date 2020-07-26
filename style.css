@@ -5,18 +5,32 @@
   padding: 0;
   color: rgb(32, 32, 32);
 }
-.off {
-  position: absolute;
-  left: -9999px;
-}
+
 .displayNone {
   display: none;
 }
-.displayBlock {
-  display: block;
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: translateX(150%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
-#pick {
-  margin-top: 150px;
+.on {
+  animation-name: animation;
+  -webkit-animation-name: animation;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+.off {
+  display: none;
 }
 section {
   margin: 0px 150px;
@@ -70,14 +84,15 @@ img {
 }
 
 .modalDisplay {
-  z-index: 1000;
+  z-index: 100;
   background-color: #fff;
   box-shadow: 15px 15px 27px #959595;
- 
   width: 50%;
   position: fixed;
-  top : 20%; 
-  left:22%;
+  top: 20%;
+  left: 22%;
+  animation-duration: 5s;
+  animation-name: slidein;
 }
 .modalDisplay img {
   width: 50%;
@@ -90,16 +105,29 @@ img {
   text-align: center;
   height: 70%;
   margin: 20px 10px;
-
 }
 
 #close {
   cursor: pointer;
-  position: relative; 
-  left: 95%;
-  top : 5%
+  position: relative;
+  left: 93%;
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 100%;
+  font-weight: 500;
+  color: #f2f2f2;
+  background-color: #333;
 }
 
-.filterMain{
-    filter: opacity(0.3) grayscale(80%);
+#close:hover {
+  background-color: #f2f2f2;
+  border: #333 solid 1px;
+  color: #333;
+  transition: 300ms ease-out;
+}
+
+.filterMain {
+  filter: opacity(0.3) grayscale(80%);
 }
