@@ -31,10 +31,8 @@
 .on {
   animation-name: animation;
   -webkit-animation-name: animation;
-
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
-
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 }
