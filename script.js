@@ -1,10 +1,13 @@
 const display1 = document.getElementById("display1");
 const display2 = document.getElementById("display2");
 const display3 = document.getElementById("display3");
+const display4 = document.getElementById("display4");
 
 const section1 = document.getElementById("section1");
 const section2 = document.getElementById("section2");
 const section3 = document.getElementById("section3");
+const section4 = document.getElementById("section4");
+
 
 const sections = document.getElementsByClassName("sections");
 
@@ -66,3 +69,5 @@ closeModal.addEventListener("click", function () {
 show(display1, section1);
 show(display2, section2);
 show(display3, section3);
+show(display4, section4);
+
